@@ -2,19 +2,13 @@ package com.example.demo.controller;
 
 import com.example.demo.dto.chatGpt.CustomChatCompletionResult;
 import com.example.demo.dto.chatGpt.CustomChatMassage;
-import com.example.demo.dto.chatGpt.CustomChatMassageRole;
 import com.example.demo.service.chatGpt.ChatGptServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import java.util.Map;
 
 @RestController
-@RequestMapping("/chat-gpt")
+@RequestMapping("/chat")
 public class ChatGptController {
 
     private ChatGptServiceImpl chatGptService;
@@ -28,4 +22,5 @@ public class ChatGptController {
     public CustomChatCompletionResult sendMassage(@RequestBody List<CustomChatMassage> massage){
         return chatGptService.result(massage);
     }
+
 }
