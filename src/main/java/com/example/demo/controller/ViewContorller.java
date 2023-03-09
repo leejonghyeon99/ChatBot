@@ -10,4 +10,19 @@ public class ViewContorller {
     public String home(){
         return "index";
     }
+
+    @RequestMapping("/test")
+    public String test(){
+        return "test";
+    }
+
+    @RequestMapping("/user")
+    public String user(){
+        return "login";
+    }
+
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
 }

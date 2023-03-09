@@ -4,7 +4,6 @@ import com.example.demo.config.ChatGptConfig;
 import com.example.demo.dto.chatGpt.CustomChatCompletionRequest;
 import com.example.demo.dto.chatGpt.CustomChatCompletionResult;
 import com.example.demo.dto.chatGpt.CustomChatMassage;
-import com.example.demo.dto.chatGpt.CustomChatMassageRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,9 +13,7 @@ import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 
 @Service
